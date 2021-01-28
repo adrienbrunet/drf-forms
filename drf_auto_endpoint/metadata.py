@@ -61,6 +61,7 @@ class AutoMetadataMixin(object):
         except Exception:
             # Custom viewset is expecting something we can't guess
             serializer_instance = serializer()
+
         endpoint = None
         if hasattr(view, 'endpoint'):
             endpoint = view.endpoint
